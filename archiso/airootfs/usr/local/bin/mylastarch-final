@@ -1,7 +1,7 @@
 #!/bin/bash
 echo
 echo "#################################"
-echo "Start carli-final"
+echo "Start mylastarch-final"
 echo "#################################"
 
 echo "Permissions of important folders"
@@ -30,7 +30,7 @@ rm -f /etc/sudoers.d/g_wheel
 rm -f /etc/polkit-1/rules.d/49-nopasswd_global.rules
 rm -r /etc/systemd/system/etc-pacman.d-gnupg.mount
 rm /root/{.automated_script.sh,.zlogin}
-mv /etc/carli-release /etc/lsb-release
+mv /etc/mylastarch-release /etc/lsb-release
 
 
 echo "Permission of root"
@@ -38,6 +38,6 @@ echo "#################################"
 chmod -v 750 /root
 
 echo "#################################"
-echo "End carli-final"
+echo "End mylastarch-final"
 echo "#################################"
-rm /usr/local/bin/carli-final
+rm /usr/local/bin/mylastarch-final

@@ -1,15 +1,6 @@
 #!/bin/bash
 #set -e
 ##################################################################################################################
-# Author	:	Erik Dubois
-# Website	:	https://www.erikdubois.be
-# Website	:	https://www.arcolinux.info
-# Website	:	https://www.arcolinux.com
-# Website	:	https://www.arcolinuxd.com
-# Website	:	https://www.arcolinuxb.com
-# Website	:	https://www.arcolinuxiso.com
-# Website	:	https://www.arcolinuxforum.com
-##################################################################################################################
 #
 #   DO NOT JUST RUN THIS. EXAMINE AND JUDGE. RUN AT YOUR OWN RISK.
 #
@@ -29,19 +20,19 @@ echo
 	desktop="plasma"
 	dmDesktop="plasma"
 
-	carliVersion='v21.12.02'
+	mylastarchVersion='25.05.15'
 
-	isoLabel='carli-'$carliVersion'-x86_64.iso'
+	isoLabel='mylastarch-'$mylastarchVersion'-x86_64.iso'
 
 	# setting of the general parameters
-	archisoRequiredVersion="archiso 60-1"
-	buildFolder=$HOME"/carli-build"
-	outFolder=$HOME"/Carli-Out"
+	archisoRequiredVersion="archiso 88-1"
+	buildFolder=$HOME"/mylastarch-build"
+	outFolder=$HOME"/mylastarch-Out"
 	archisoVersion=$(sudo pacman -Q archiso)
 
 	echo "################################################################## "
 	echo "Building the desktop                   : "$desktop
-	echo "Building version                       : "$carliVersion
+	echo "Building version                       : "$mylastarchVersion
 	echo "Iso label                              : "$isoLabel
 	echo "Do you have the right archiso version? : "$archisoVersion
 	echo "What is the required archiso version?  : "$archisoRequiredVersion
@@ -190,18 +181,18 @@ echo
 	#Setting variables
 
 	#profiledef.sh
-	oldname1='iso_name="carli'
-	newname1='iso_name="carli'
+	oldname1='iso_name="mylastarch'
+	newname1='iso_name="mylastarch'
 
-	oldname2='iso_label="carli'
-	newname2='iso_label="carli'
+	oldname2='iso_label="mylastarch'
+	newname2='iso_label="mylastarch'
 
-	oldname3='Carli'
-	newname3='Carli'
+	oldname3='mylastarch'
+	newname3='mylastarch'
 
 	#hostname
-	oldname4='Carli'
-	newname4='Carli'
+	oldname4='mylastarch'
+	newname4='mylastarch'
 
 	#sddm.conf user-session
 	oldname5='Session=plasma'

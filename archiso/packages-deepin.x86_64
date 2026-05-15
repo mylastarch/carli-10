@@ -130,15 +130,10 @@ zsh
 
 # MY LAST ARCH
 bash-completion
-plasma-meta
-#kde-applications-meta
-konsole
-packagekit-qt6
 sddm
-partitionmanager
-dolphin
-kate
-kio-admin
+deepin
+deepin-kwin
+deepin-extra
 
 #calamares
 calamares
